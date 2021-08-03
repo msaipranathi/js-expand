@@ -1,0 +1,166 @@
+* {
+     margin: 0;
+     padding: 0; 
+     box-sizing: border-box;
+}
+
+body{
+    background-color:rgba(0, 255, 255, 0.247) ;
+    font-family: sans-serif;
+    font-size:small;
+    
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+#accordion {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    
+}
+#contentBx {
+    margin-top: 20px; 
+    position: relative;
+}
+#contentBx1 {
+    margin-top: 20px; 
+    position: relative;
+}
+#contentBx2 {
+    margin-top: 20px; 
+    position: relative;
+}
+#contentBx3 {
+    margin-top: 20px; 
+    position: relative;
+}
+#label {
+    background-color: cadetblue;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    
+}
+#label1 {
+    background-color: cadetblue;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    
+}
+#label2 {
+    background-color: cadetblue;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    
+}
+#label3 {
+    background-color: cadetblue;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    
+}
+#label::before {
+    content: "+";
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    font-size:20px;
+
+}
+#label1::before {
+    content: "+";
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    font-size:20px;
+
+}
+#label2::before {
+    content: "+";
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    font-size:20px;
+
+}
+#label3::before {
+    content: "+";
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    font-size:20px;
+
+}
+#content{
+    position: relative;
+    background-color: white;
+    /* padding: 8px; */
+    height: 0;
+    overflow: hidden;
+    
+    transition: 0.5%;
+}
+#content1{
+    position: relative;
+    background-color: white;
+    /* padding: 8px; */
+    height: 0;
+    overflow: hidden;
+    
+    transition: 0.5%;
+}
+#content2{
+    position: relative;
+    background-color: white;
+    /* padding: 8px; */
+    height: 0;
+    overflow: hidden;
+    
+    transition: 0.5%;
+}
+#content3{
+    position: relative;
+    background-color: white;
+    /* padding: 8px; */
+    height: 0;
+    overflow: hidden;
+    transition: 0.5%;
+}
+#contentBx.active #content{
+    height: 70px;
+    padding: 5px;
+}
+#contentBx1.active #content1{
+    height: 70px;
+    padding: 5px;
+}
+#contentBx2.active #content2{
+    height: 70px;
+    padding: 5px;
+}
+#contentBx3.active #content3{
+    height: 70px;
+    padding: 5px;
+}
+#contentBx.active #label::before {
+    content: "-";
+}
+#contentBx1.active #label1::before {
+    content: "-";
+}
+#contentBx2.active #label2::before {
+    content: "-";
+}
+#contentBx3.active #label3::before {
+    content: "-";
+}
